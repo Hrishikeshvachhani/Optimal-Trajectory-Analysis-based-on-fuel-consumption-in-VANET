@@ -5,7 +5,9 @@ The dataset can be generated using the SUMO configuration files. We have taken G
 * ### Data Generation
 Using Open Street Map tool we generated the following map for simulation.
  * The “randomTrips.py" generates a set of random trips for a given network (option -n). It does so by choosing source and destination edge either uniformly at random or with a modified distribution. The resulting trips are stored in an XML file. The following command can simulate the desired number of random trips.
- 'code(python randomTrips.py -n demo.net.xml -r demo.rou.xml -e 25000 -l)'
+ ```console
+Hrishikesh@laptop:~$ python randomTrips.py -n demo.net.xml -r demo.rou.xml -e 25000 -l
+```
 demo.net.xml denotes the network file generated while generating the osm of Gandhinagar. The demo.rou.xml file is generated using this randomTrips.py file. The 25000 denotes the number of vehicles to be simulated. The entire statement thus implies that, using the network file, randomTrips.py file will generate a route file consisting of all the routes for 25000 vehicles.
 The sumocfg file generated using OSM has a predefined route file by default named as “osm.passenger.trips.xml”. We have to change the route file manually in the sumocfg file as follows:
  
