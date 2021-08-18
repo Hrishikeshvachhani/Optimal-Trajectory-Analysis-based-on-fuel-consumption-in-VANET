@@ -2,8 +2,8 @@
 In this project we are going to develop a system which will be able to analyse the vehicle density at certain cluster points and ultimately visualize the fuel consumption at those points. This will help to understand the fuel consumption by the vehicles at different points and that at different period of time. So using this data we can predict the vehicle density at given period of time and thus its fuel consumption at that time. These predictions can thus help us to assist the user in selecting a better path, such that the fuel consumption can be minimized. These can be achieved at individual user level to minimize fuel consumption, as well as at higher level for an area of city or even a whole city to minimize its overall fuel consumption, as the data can be quite varied. To make this work we used time series based algorithm LSTM to predict the density of the vehicles at a given time period.
 
 The dataset can be generated using the SUMO configuration files. We have taken Gandhinagar, Gujarat, India as the location to generate the dataset. You can chose you own location if needed. 
-* ###Data Generation###
-            Using Open Street Map tool we generated the following map for simulation.
+* ### Data Generation
+Using Open Street Map tool we generated the following map for simulation.
  
 The “randomTrips.py" generates a set of random trips for a given network (option -n). It does so by choosing source and destination edge either uniformly at random or with a modified distribution. The resulting trips are stored in an XML file. The following command can simulate the desired number of random trips.
 python randomTrips.py -n demo.net.xml -r demo.rou.xml -e 25000 -l
