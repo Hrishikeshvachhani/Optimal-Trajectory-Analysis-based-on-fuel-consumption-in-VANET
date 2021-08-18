@@ -14,7 +14,7 @@ The sumocfg file generated using OSM has a predefined route file by default name
 ![alt text](https://github.com/Hrishikeshvachhani/Optimal-Trajectory-Analysis-based-on-fuel-consumption-in-VANET/blob/main/Images/Sumocfg%20file.png)
 we have given “osm.sumocfg” file as the file to be simulated. We have specified ‘--emission-output’ as the required format of output. It generates a data where the fields are different types of energy emitted by the vehicle at each timestep. On running this python file, the SUMO application automatically opens with the specified map. On starting the simulation, it starts generating the emission file for the ongoing simulation in the xml format.
 * Pre-Processing
-The file name is “xml2csv.py”. The file is dependent on another file name “xsd.py”. Both the files should be present in the very same location as the xml file that is to be converted. Following the is the command that does this conversion and as a output csv file is generated. Size of the data is reduced from 2GB to 400MB. The final dataset can be found with name “emission50000t_25000v.csv”. 
+The file name is “xml2csv.py”. The file is dependent on another file name “xsd.py”. Both the files should be present in the very same location as the xml file that is to be converted. Following the is the command that does this conversion and as a output csv file is generated. Size of the data is reduced from 2GB to 400MB. The final dataset can be found with name “[emission50000t_25000v.csv](https://drive.google.com/file/d/12RQy26r_0jvAUE2OK2dkfHKG-w0VGamc/view?usp=sharing)”. 
 Note:- this pre-processing step is to be done in SUMO folder location.
  ```console
 Hrishikesh@laptop:~$ python xml2csv.py input.xml
