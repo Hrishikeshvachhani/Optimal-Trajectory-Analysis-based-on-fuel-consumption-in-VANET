@@ -25,4 +25,4 @@ Hrishikesh@laptop:~$ python xml2csv.py input.xml
  * density_analysis_25_30.ipynp analysis the 25 and 30 cluster. It creates certain files related to the location of the cluster and files related to 0 density count. At last it creates 2 csv files corresponding to perticular cluster, which will be used by LSTM model.
  * We are predicting the fuel consumption using LinearSVR based on the location and density
  * lstm_60_5 is the LSTM model file where the model is trained.
- * lstm.ipynb is the testing file, where model is test on different cluster. The trained model is provided in the `models` folder
+ * lstm.ipynb is the testing file, where model is test on different cluster. The trained model is provided in the `LSTM model` folder
